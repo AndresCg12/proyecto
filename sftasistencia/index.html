@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia QR</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f4; }
+        #qr-reader { width: 500px; margin: auto; border: 5px solid #333; border-radius: 10px; }
+        #qr-reader-results { margin-top: 20px; font-size: 1.2em; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Registro de Asistencia</h1>
+    <p>Coloca el código QR del estudiante frente a la cámara.</p>
+
+    <div id="qr-reader"></div>
+    
+    <div id="qr-reader-results">Esperando código QR...</div>
+
+    <script src="https://unpkg.com/html5-qrcode/html5-qrcode.min.js"></script>
+    
+    <script src="/static/scanner.js"></script>
+</body>
+</html>
